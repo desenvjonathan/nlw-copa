@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --card-title-border-color: #746615;
+  --card-color-primary: #F7DD43;
+}
+
+body.blue {
+  --card-title-border-color: #338AF3;
+  --card-color-primary: #338AF3;
+}
+
 ul {
   list-style: none;
 }
@@ -41,7 +51,7 @@ header {
   padding: 32px 23px;
   text-align: center;
   background: #1D1C19;
-  border-bottom: 2px solid #F7DD43;
+  border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
 }
 
@@ -51,12 +61,12 @@ header {
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  border: 1px solid #746615;
+  border: 1px solid var(--card-title-border-color);
   border-radius: 6px;
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: #F7DD43;
+  color: var(--card-color-primary);
 }
 
 .card h2 span {
@@ -88,4 +98,39 @@ header {
   font-size: 36px;
   line-height: 125%;
   color: #E1E1E6;
+}
+
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover {
+  transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img {
+  transition: transform 0.2s;
+}
+
+.card {
+  opacity: 0;
+  animation: appear .7s forwards;
+}
+
+@keyframes appear {
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@media (min-width: 700px) {
+  #cards {
+    max-width: 670px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
