@@ -38,7 +38,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '22/11', 
-      'quinta',
+      'terça',
       createGame('argentina', '07:00', 'saudi-arabia') +
       createGame('denmark', '10:00', 'tunisia') +
       createGame('mexico', '13:00', 'poland') +
@@ -47,7 +47,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '23/11', 
-      'segunda',
+      'quarta',
       createGame('morocco', '07:00', 'croatia') +
       createGame('germany', '10:00', 'japan') +
       createGame('spain', '13:00', 'costa-rica') +
@@ -56,7 +56,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '24/11', 
-      'sexta',
+      'quinta',
       createGame('switzerland', '07:00', 'cameroon') +
       createGame('uruguay', '10:00', 'south-korea') +
       createGame('portugal', '13:00', 'ghana') +
@@ -74,7 +74,7 @@ document.querySelector('#cards').innerHTML =
     
     createCard(
       '26/11', 
-      'sexta',
+      'sábado',
       createGame('tunisia', '07:00', 'australia') +
       createGame('poland', '10:00', 'saudi-arabia') +
       createGame('france', '13:00', 'denmark') +
@@ -82,7 +82,7 @@ document.querySelector('#cards').innerHTML =
     ) +
     createCard(
       '27/11', 
-      'sexta',
+      'domingo',
       createGame('japan', '07:00', 'costa-rica') +
       createGame('belgium', '10:00', 'morocco') +
       createGame('croatia', '13:00', 'canada') +
@@ -91,7 +91,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '28/11', 
-      'sexta',
+      'segunda',
       createGame('cameroon', '07:00', 'serbia') +
       createGame('south-korea', '10:00', 'ghana') +
       createGame('brazil', '13:00', 'switzerland') +
@@ -100,7 +100,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '29/11', 
-      'sexta',
+      'terça',
       createGame('ecuador', '12:00', 'senegal') +
       createGame('netherlands', '12:00', 'qatar') +
       createGame('iran', '16:00', 'united-states') +
@@ -109,7 +109,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '30/11', 
-      'sexta',
+      'quarta',
       createGame('tunisia', '12:00', 'france') +
       createGame('australia', '12:00', 'denmark') +
       createGame('poland', '16:00', 'argentina') +
@@ -118,7 +118,7 @@ document.querySelector('#cards').innerHTML =
 
     createCard(
       '01/12', 
-      'sexta',
+      'quinta',
       createGame('croatia', '12:00', 'belgium') +
       createGame('canada', '12:00', 'morocco') +
       createGame('japan', '16:00', 'spain') +
