@@ -7,11 +7,22 @@
 :root {
   --card-title-border-color: #746615;
   --card-color-primary: #F7DD43;
+  --card-bg-color: #1D1C19;
+  --bg: url('./images/bg-yellow.svg')
 }
 
 body.blue {
   --card-title-border-color: #338AF3;
   --card-color-primary: #338AF3;
+  --card-bg-color: #202024;
+  --bg: url('./images/bg-blue.svg')
+}
+
+body.green {
+  --card-title-border-color: #047C3F;
+  --card-color-primary: #047C3F;
+  --card-bg-color: #1A1F1B;
+  --bg: url('./images/bg-green.svg')
 }
 
 ul {
@@ -20,9 +31,8 @@ ul {
 
 body {
   background-color: #121214;
-  background-image: url(./images/bg.svg);
-  background-position-x: center;
-  background-position-y: -255px;
+  background-image: var(--bg);
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -33,14 +43,23 @@ body {
 
 #app {
   width: fit-content; /* para encaixar o conteúdo dentro da caixa*/
-  margin: 52px auto;
+  margin: auto;
+  padding-top: 52px;
 }
 
 header {
   margin-bottom: 63px;
   text-align: center;
+  opacity: 0;
+  animation: appear .5s forwards;
 }
 
+header:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+header {}
 #cards {
   display: flex;
   flex-direction: column;
@@ -50,9 +69,10 @@ header {
 .card{
   padding: 32px 23px;
   text-align: center;
-  background: #1D1C19;
+  background: var(--card-bg-color);
   border-bottom: 2px solid var(--card-color-primary);
   border-radius: 6px;
+  margin-bottom: 53px;
 }
 
 .card h2 {
@@ -66,7 +86,7 @@ header {
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: var(--card-color-primary);
+  color: #F7DD43;
 }
 
 .card h2 span {
@@ -114,7 +134,7 @@ header {
 
 .card {
   opacity: 0;
-  animation: appear .7s forwards;
+  animation: appear 1s forwards;
 }
 
 @keyframes appear {
